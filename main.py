@@ -52,7 +52,7 @@ matriceC = []
 print("")
 print(" 1.Addition   2.Multiplication   3.Transposée")
 print("")
-opération = input("")
+opération = input(">")
 
 if opération == "1" :
     print("Attention aux régles des matrices !")
