@@ -19,6 +19,11 @@ print("A = {}".format(matriceA))
     # Matrice "A" créé
 
 
+
+
+
+
+
     # taille de la matrice 
 nxmb = input("taille de la matrice B ( nm , entre 1 et 9) : ")
 nxmb.split(" ")
