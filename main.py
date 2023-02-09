@@ -25,7 +25,8 @@ if opération == "1" :
     matriceA = []
     x = 1
     for i in range(int(na)):
-        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x)).split(",")
+        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x))
+        ligne.split(",")
         matriceA.append(ligne)
         x += 1
     print("A = {}".format(matriceA))
@@ -44,7 +45,8 @@ if opération == "1" :
     matriceB = []
     x = 1
     for i in range(int(nb)):
-        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x)).split(",")
+        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x))
+        ligne.split(",")
         matriceB.append(ligne)
         x += 1
     print("B = {}".format(matriceB))
@@ -60,6 +62,7 @@ if opération == "1" :
         ligne_addition = [x + y for x, y in zip(matriceA[y], matriceB[y])]
         matriceC.append(ligne_addition)
         y += 1
+    print(matriceC)
     print(matriceC[0])
     print(matriceC[1])
 
