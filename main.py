@@ -4,7 +4,7 @@ matriceC = []
 
 # choix de l'oppération 
 print("")
-print(" 1.Addition   2.Multiplication   3.Transposée")
+print(" 1.Addition   2.Multiplication   3.Transposée   4.Déterminant")
 print("")
 opération = input(">")
 
@@ -25,8 +25,7 @@ if opération == "1" :
     matriceA = []
     x = 1
     for i in range(int(na)):
-        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x))
-        ligne.split(",")
+        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x)).split(",")
         matriceA.append(ligne)
         x += 1
     print("A = {}".format(matriceA))
@@ -45,8 +44,7 @@ if opération == "1" :
     matriceB = []
     x = 1
     for i in range(int(nb)):
-        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x))
-        ligne.split(",")
+        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x)).split(",")
         matriceB.append(ligne)
         x += 1
     print("B = {}".format(matriceB))
@@ -82,8 +80,7 @@ elif opération == "2" :
     matriceA = []
     x = 1
     for i in range(int(na)):
-        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x))
-        ligne.split(",")
+        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x)).split(",")
         matriceA.append(ligne)
         x += 1
     print("A = {}".format(matriceA))
@@ -103,8 +100,7 @@ elif opération == "2" :
     matriceB = []
     x = 1
     for i in range(int(nb)):
-        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x))
-        ligne.split(",")
+        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x)).split(",")
         matriceB.append(ligne)
         x += 1
     print("B = {}".format(matriceB))
@@ -125,12 +121,14 @@ elif opération == "3" :
     matriceA = []
     x = 1
     for i in range(int(na)):
-        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x))
-        ligne.split(",")
+        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x)).split(",")
         matriceA.append(ligne)
         x += 1
     print("A = {}".format(matriceA))
         # Matrice "A" créé
+
+elif opération == "4":
+    print("4")
 
 else :
     print("wrong number")

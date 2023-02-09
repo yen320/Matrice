@@ -11,8 +11,7 @@ print(ma)
 matriceA = []
 x = 1
 for i in range(int(na)):
-    ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x))
-    ligne.split(",")
+    ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x)).split(",")
     matriceA.append(ligne)
     x += 1
 print("A = {}".format(matriceA))
@@ -37,8 +36,7 @@ print(mb)
 matriceB = []
 x = 1
 for i in range(int(nb)):
-    ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x))
-    ligne.split(",")
+    ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x)).split(",")
     matriceB.append(ligne)
     x += 1
 print("B = {}".format(matriceB))
