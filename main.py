@@ -56,11 +56,12 @@ if opération == "1" :
         quit
     # je comprend pas bien ce que je fais j'essay de faire l'addition
     y = 0
-    for i in range(matriceA):
+    for i in range(len(matriceA)):
         ligne_addition = [x + y for x, y in zip(matriceA[y], matriceB[y])]
         matriceC.append(ligne_addition)
         y += 1
-
+    print(matriceC[0])
+    print(matriceC[1])
 
 
 elif opération == "2" :
