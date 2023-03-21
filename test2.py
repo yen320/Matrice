@@ -1,1 +1,2 @@
-print("1,2,3".split(","))
+t = (1:2:3).split(":")
+return t
