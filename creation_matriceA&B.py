@@ -11,15 +11,18 @@ print(ma)
 matriceA = []
 x = 1
 for i in range(int(na)):
-    ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x)).split(",")
+    ligne = []
+    print("ligne {}".format(x))
+    y = 1
+    for j in range(int(ma)):
+        ligne.append(int(input("colone {} ".format(y))))
+        y += 1
     matriceA.append(ligne)
     x += 1
 print("A = {}".format(matriceA))
     # Matrice "A" créé
 
-
-
-
+print(matriceA[0])
 
 
 
