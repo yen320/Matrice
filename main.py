@@ -18,8 +18,8 @@ if opération == "1" :
     print(nxma)
     na = nxma[0]
     ma = nxma[1]
-    print(na)
-    print(ma)
+    print("lignes : {}".format(na))
+    print("colones : {}".format(ma))
 
         # deffinition de la matrice
     matriceA = []
@@ -76,7 +76,7 @@ if opération == "1" :
         ligne_addition = [x + y for x, y in zip(matriceA[y], matriceB[y])]
         matriceC.append(ligne_addition)
         y += 1
-    print(matriceC)
+    print("C ={}".format(matriceC))
     print(matriceC[0])
     print(matriceC[1])
 
