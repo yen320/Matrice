@@ -25,13 +25,20 @@ if opération == "1" :
     matriceA = []
     x = 1
     for i in range(int(na)):
-        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x))
-        ligne.split(",")
+        ligne = []
+        print("ligne {}".format(x))
+        y = 1
+        for j in range(int(ma)):
+            ligne.append(int(input("colone {} ".format(y))))
+            y += 1
         matriceA.append(ligne)
         x += 1
     print("A = {}".format(matriceA))
         # Matrice "A" créé
     
+    print(matriceA[0])
+    print(matriceA[1])
+
         # taille de la matrice 
     nxmb = input("taille de la matrice B ( nm , entre 1 et 9) : ")
     nxmb.split(" ")
@@ -45,12 +52,19 @@ if opération == "1" :
     matriceB = []
     x = 1
     for i in range(int(nb)):
-        ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x))
-        ligne.split(",")
+        ligne = []
+        print("ligne {}".format(x))
+        y = 1
+        for j in range(int(mb)):
+            ligne.append(int(input("colone {} ".format(y))))
+            y += 1
         matriceB.append(ligne)
         x += 1
     print("B = {}".format(matriceB))
         # Matrice "B" créé
+
+    print(matriceB[0])
+    print(matriceB[1])
 
     # verification que les dimmentions sont les memes 
     if na != nb or ma != mb :
