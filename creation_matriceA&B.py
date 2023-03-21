@@ -23,7 +23,7 @@ print("A = {}".format(matriceA))
     # Matrice "A" créé
 
 print(matriceA[0])
-
+print(matriceA[1])
 
 
     # taille de la matrice 
@@ -39,9 +39,16 @@ print(mb)
 matriceB = []
 x = 1
 for i in range(int(nb)):
-    ligne = input("ligne {} : (1,2,3,4,5, ... )".format(x)).split(",")
+    ligne = []
+    print("ligne {}".format(x))
+    y = 1
+    for j in range(int(mb)):
+        ligne.append(int(input("colone {} ".format(y))))
+        y += 1
     matriceB.append(ligne)
     x += 1
 print("B = {}".format(matriceB))
     # Matrice "B" créé
 
+print(matriceB[0])
+print(matriceB[1])
