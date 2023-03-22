@@ -1,5 +1,4 @@
 
-
 matriceC = []
 
 # choix de l'oppération 
@@ -209,7 +208,69 @@ elif opération == "4":
     print("4")
 
 elif opération == "5":
-    print("5")
+        # taille de la matrice 
+    nxma = input("taille de la matrice A ( nm , entre 1 et 9) : ")
+    nxma.split(" ")
+    print(nxma)
+    na = nxma[0]
+    ma = nxma[1]
+    print("lignes : {}".format(na))
+    print("colones : {}".format(ma))
+
+        # deffinition de la matrice
+    matriceA = []
+    x = 1
+    for i in range(int(na)):
+        ligne = []
+        print("ligne {}".format(x))
+        y = 1
+        for j in range(int(ma)):
+            ligne.append(int(input("colone {} ".format(y))))
+            y += 1
+        matriceA.append(ligne)
+        x += 1
+    print("A = {}".format(matriceA))
+        # Matrice "A" créé
+
+    na = int(na)
+    ma = int(ma)
+
+    x = 0
+    for i in range(na):
+        print(matriceA[x])
+        x += 1
+
+    # multiplicateur
+    k = int(input("multiplicateur : "))
+
+    # création d'une matrice "vide" de la taille de A
+    matriceC = []
+
+    for i in range(na):
+        ligne = [0] * ma
+        matriceC.append(ligne)
+
+    # début de la transposé 
+
+    x = 0
+    for i in range(na):
+        y = 0
+        for i in range(ma):
+            matriceC[x][y] = k * matriceA[x][y]
+
+            y +=1
+        x +=1
+
+    # afficher la matrice des 2 magnères 
+    print(matriceA)
+    x = 0
+    for i in range(na):    
+        print(matriceC[x])
+        x+=1
+
+elif opération == "4":
+    print("4")
+
 
 else :
     print("wrong number")
