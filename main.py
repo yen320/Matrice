@@ -176,10 +176,6 @@ elif opération == "3" :
 
     # début de la transposé 
 
-    for i in range(nt):
-        ligne = [0] * mt
-        matriceT.append(ligne)
-
     x = 0
     for i in range(nt):
         y = 0
