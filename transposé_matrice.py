@@ -12,4 +12,13 @@ for i in range(nt):
     ligne = [0] * mt
     matriceT.append(ligne)
 
+x = 0
+for i in range(nt):
+    y = 0
+    for i in range(mt):
+        matriceT[x][y] = matriceA[y][x]
 
+        y +=1
+    x +=1
+
+print(matriceT)
