@@ -4,7 +4,7 @@ matriceC = []
 
 # choix de l'oppération 
 print("")
-print(" 1.Addition   2.Multiplication   3.Transposée   4.Déterminant")
+print(" 1.Addition   2.Multiplication par une matrice   3.Transposée   4.Déterminant   5.Multiplication par un scalaire")
 print("")
 opération = input(">")
 
@@ -168,6 +168,9 @@ elif opération == "3" :
 elif opération == "4":
     print("4")
 
+elif opération == "5":
+    print("5")
+    
 else :
     print("wrong number")
 
