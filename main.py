@@ -6,7 +6,7 @@ matriceC = []
 print("")
 print(" 1.Addition   2.Multiplication par une matrice   3.Transposée   4.Déterminant   5.Multiplication par un scalaire")
 print("")
-opération = input(">")
+opération = input("> ")
 
 if opération == "1" :
     print("Attention aux régles des matrices !")
@@ -18,8 +18,8 @@ if opération == "1" :
     print(nxma)
     na = nxma[0]
     ma = nxma[1]
-    print("lignes : {}".format(na))
-    print("colones : {}".format(ma))
+    print("{} lignes".format(na))
+    print("{} colones".format(ma))
 
         # deffinition de la matrice
     matriceA = []
@@ -36,9 +36,11 @@ if opération == "1" :
     print("A = {}".format(matriceA))
         # Matrice "A" créé
     
-    print(matriceA[0])
-    print(matriceA[1])
-
+    x=0
+    for i in range(na):
+        print(matriceA[x])
+        x+=1
+    
         # taille de la matrice 
     nxmb = input("taille de la matrice B ( nm , entre 1 et 9) : ")
     nxmb.split(" ")
@@ -63,12 +65,16 @@ if opération == "1" :
     print("B = {}".format(matriceB))
         # Matrice "B" créé
 
-    print(matriceB[0])
-    print(matriceB[1])
+    x=0
+    for i in range(nb):
+        print(matriceB[x])
+        x+=1
 
     # verification que les dimmentions sont les memes 
     if na != nb or ma != mb :
         print("régles des matrices non réspécté")
+        print("")
+        print("")
         quit
     # je comprend pas bien ce que je fais j'essay de faire l'addition
     y = 0
@@ -76,9 +82,12 @@ if opération == "1" :
         ligne_addition = [x + y for x, y in zip(matriceA[y], matriceB[y])]
         matriceC.append(ligne_addition)
         y += 1
+    # afficher la matrice des 2 magnères 
     print("C ={}".format(matriceC))
-    print(matriceC[0])
-    print(matriceC[1])
+    x = 0
+    for i in range(na):    
+        print(matriceC[x])
+        x+=1
 
 
 elif opération == "2" :
@@ -109,8 +118,10 @@ elif opération == "2" :
     print("A = {}".format(matriceA))
         # Matrice "A" créé
 
-    print(matriceA[0])
-    print(matriceA[1])
+    x=0
+    for i in range(na):
+        print(matriceA[x])
+        x+=1
 
         # taille de la matrice 
     nxmb = input("taille de la matrice B ( nm , entre 1 et 9) : ")
@@ -162,8 +173,10 @@ elif opération == "3" :
     print("A = {}".format(matriceA))
         # Matrice "A" créé
 
-    print(matriceA[0])
-    print(matriceA[1])
+    x = 0
+    for i in range(na):
+        print(matriceA[x])
+        x += 1
 
     # création d'une matrice "vide" de la taille de T
     matriceT = []
@@ -185,7 +198,12 @@ elif opération == "3" :
             y +=1
         x +=1
 
+    # afficher la matrice des 2 magnères 
     print(matriceT)
+    x = 0
+    for i in range(na):    
+        print(matriceC[x])
+        x+=1
 
 elif opération == "4":
     print("4")
