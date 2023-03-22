@@ -16,6 +16,7 @@ if na != mb or ma != nb :
     print("opération impossible")
     quit()
 
+# création d'une matrice "vide" de la taille de C
 for i in range(nc):
     ligne = [0] * mc 
     matriceC.append(ligne)
