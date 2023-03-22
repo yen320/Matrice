@@ -28,3 +28,12 @@ matriceC[1][1] = matriceA[1][0] * matriceB[0][1] + matriceA[1][1] * matriceB[1][
 
 print(matriceC)
 
+# calcule matrice nxm (peut être avec matrice carré -> surement plus simple) 
+x = 0
+for i in range(nc):
+    y = 0
+    for i in range(mc):
+        matriceC[x][y] = 
+
+        y +=1
+    x +=1
