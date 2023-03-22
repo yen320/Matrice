@@ -10,8 +10,7 @@ matriceA = [[0,2], [3,4]]
 matriceB = [[3,2], [4,4]]
 matriceC = []
 
-# verification :
-
+# verification de la taille des matrices 
 if na != mb or ma != nb :
     print("opération impossible")
     quit()
@@ -20,6 +19,11 @@ if na != mb or ma != nb :
 for i in range(nc):
     ligne = [0] * mc 
     matriceC.append(ligne)
+
+matriceC[0][0] = matriceA[0][0] * matriceB[0][0] + matriceA[0][1] * matriceB[1][0]
+matriceC[0][1] = matriceA[0][0] * matriceB[0][1] + matriceA[0][1] * matriceB[1][1]
+matriceC[1][0] = matriceA[1][0] * matriceB[0][0] + matriceA[1][1] * matriceB[1][0]
+matriceC[1][1] = matriceA[1][0] * matriceB[0][1] + matriceA[1][1] * matriceB[1][1]
 
 print(matriceC)
 
