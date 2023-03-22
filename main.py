@@ -165,12 +165,38 @@ elif opération == "3" :
     print(matriceA[0])
     print(matriceA[1])
 
+    # création d'une matrice "vide" de la taille de T
+    matriceT = []
+    nt = int(ma)
+    mt = int(na)
+
+    for i in range(nt):
+        ligne = [0] * mt
+        matriceT.append(ligne)
+
+    # début de la transposé 
+
+    for i in range(nt):
+        ligne = [0] * mt
+        matriceT.append(ligne)
+
+    x = 0
+    for i in range(nt):
+        y = 0
+        for i in range(mt):
+            matriceT[x][y] = matriceA[y][x]
+
+            y +=1
+        x +=1
+
+    print(matriceT)
+
 elif opération == "4":
     print("4")
 
 elif opération == "5":
     print("5")
-    
+
 else :
     print("wrong number")
 
