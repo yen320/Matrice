@@ -16,7 +16,9 @@ if na != mb or ma != nb :
     print("opération impossible")
     quit()
 
-matriceC
+for i in range(nc):
+    ligne = [0] * mc 
+    matriceC.append(ligne)
 
-print(matriceA[0][1])
+print(matriceC)
 
