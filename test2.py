@@ -15,13 +15,13 @@ if na != mb or ma != nb :
     print("! dimentions non compatibles !")
     quit()
 
-# début du calcule 
+# début du calcule attention vérifier les valeurs (ma, na, nb ...) dans les boucles
 n = 0 
-for i in range(3):
+for i in range(na):
     m = 0
-    for i in range(3):
+    for i in range(ma):
         x = 0
-        for i in range(3):
+        for i in range(ma):
             print(matriceA[n][x], matriceB[x][m])
             matriceC[n][m] += matriceA[n][x] * matriceB[x][m]
             x += 1
