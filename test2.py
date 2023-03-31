@@ -8,12 +8,15 @@ mc = 3
 n = 0
 m = 0
 for i in range(3):
-    x = 0
+    m = 0
     for i in range(3):
-        print(matriceA[n][x], matriceB[x][m])
-        matriceC[n][m] += matriceA[n][x] * matriceB[x][m]
-        x += 1
-    m += 1
-    print("")
+        x = 0
+        for i in range(3):
+            print(matriceA[n][x], matriceB[x][m])
+            matriceC[n][m] += matriceA[n][x] * matriceB[x][m]
+            x += 1
+        m += 1
+        print("")
+    n += 1
 
 print(matriceC)
