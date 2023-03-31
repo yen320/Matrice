@@ -18,5 +18,7 @@ for i in range(3):
         m += 1
         print("")
     n += 1
+    print("-")
+    print("")
 
 print(matriceC)
