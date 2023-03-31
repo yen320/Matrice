@@ -22,9 +22,6 @@ for i in range(int(na)):
 print("A = {}".format(matriceA))
     # Matrice "A" créé
 
-print(matriceA[0])
-print(matriceA[1])
-
 
     # taille de la matrice 
 nxmb = input("taille de la matrice B ( nm , entre 1 et 9) : ")
@@ -49,6 +46,3 @@ for i in range(int(nb)):
     x += 1
 print("B = {}".format(matriceB))
     # Matrice "B" créé
-
-print(matriceB[0])
-print(matriceB[1])
