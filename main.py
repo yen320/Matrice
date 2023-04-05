@@ -268,10 +268,6 @@ elif opération == "5":
         print(matriceC[x])
         x+=1
 
-elif opération == "4":
-    print("4")
-
-
 else :
     print("wrong number")
 
