@@ -118,7 +118,7 @@ elif opération == "2" :
         # Matrice "A" créé
 
     x=0
-    for i in range(na):
+    for i in range(int(na)):
         print(matriceA[x])
         x+=1
 
@@ -145,6 +145,43 @@ elif opération == "2" :
         x += 1
     print("B = {}".format(matriceB))
         # Matrice "B" créé
+
+    # verif
+    if na != mb or ma != nb :
+        print("! dimentions non compatibles !")
+        quit()
+
+    # création d'une matrice "vide" de la taille de C
+    matriceC = []
+    nc = int(na)
+    mc = int(mb)
+
+    for i in range(int(na)):
+        ligne = [0] * mc
+        matriceC.append(ligne)
+
+    # début du calcule
+    n = 0 
+    for i in range(int(na)):
+        m = 0
+        for i in range(int(na)):
+            x = 0
+            for i in range(int(ma)):
+                print(matriceA[n][x], matriceB[x][m])
+                matriceC[n][m] += matriceA[n][x] * matriceB[x][m]
+                x += 1
+            m += 1
+            print("")
+        n += 1
+        print("-")
+        print("")
+
+    print("C = ", matriceC)
+    x = 0
+    for i in range(int(na)):    
+        print(matriceC[x])
+        x+=1
+
 
 elif opération == "3" :
     print("3")
@@ -201,7 +238,7 @@ elif opération == "3" :
     print(matriceT)
     x = 0
     for i in range(na):    
-        print(matriceC[x])
+        print(matriceT[x])
         x+=1
 
 elif opération == "4":
